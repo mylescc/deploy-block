@@ -1,0 +1,31 @@
+name: 'Deploy block'
+description: 'Add blocks on deploying past a certain time each day'
+inputs:
+  timezone:  # id of input
+    description: 'What time zone would you like this to relate to'
+    required: true
+    default: 'Europe/London'
+  monday:
+    description: 'What time on Monday would you like deploys blocked? eg. 1800'
+    required: false
+  tuesday:
+    description: 'What time on Tuesday would you like deploys blocked? eg. 1800'
+    required: false
+  wednesday:
+    description: 'What time on Wednesday would you like deploys blocked? eg. 1800'
+    required: false
+  thursday:
+    description: 'What time on Thursday would you like deploys blocked? eg. 1800'
+    required: false
+  friday:
+    description: 'What time on Friday would you like deploys blocked? eg. 1800'
+    required: false
+  saturday:
+    description: 'What time on Saturday would you like deploys blocked? eg. 1800'
+    required: false
+  sunday:
+    description: 'What time on Sunday would you like deploys blocked? eg. 1800'
+    required: false
+runs:
+  using: 'node12'
+  main: 'index.js'

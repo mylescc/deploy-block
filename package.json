@@ -1,0 +1,14 @@
+{
+  "name": "deploy-block",
+  "version": "1.0.0",
+  "description": "Block deploys on your PR's after a certain time each day",
+  "main": "index.js",
+  "author": "Myles Cwwper-Coles",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "date-fns": "^2.16.1",
+    "date-fns-tz": "^1.0.11"
+  }
+}
